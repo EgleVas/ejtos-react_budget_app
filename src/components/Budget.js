@@ -10,12 +10,12 @@ const Budget = () => {
 
     const setBudget = (event) => {
         if(event.target.value > 20000) {
-            alert("The budget value cannot exceed  £20000");
+            alert("The budget value cannot exceed  "+currency+"20000");
             setBudget(20000);
             return;
         }
         if(event.target.value < totalExpenses) {
-            alert("The budget value cannot be lower than spent  £"+totalExpenses);
+            alert("The budget value cannot be lower than spent  "+currency+totalExpenses);
             setBudget(totalExpenses);
             return;
         }
